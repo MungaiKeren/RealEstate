@@ -11,6 +11,7 @@ a:link, a:visited{
 }
 div.breadcrumbs{
     background: #30caa0;
+    margin-bottom: 10px;
 }
 div.breadcrumbs a {
     color: #333;
