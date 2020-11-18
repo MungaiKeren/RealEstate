@@ -83,33 +83,34 @@
 <section id="team" class="py-5">
   <div class="container">
     <h2 class="text-center">Our Team</h2>
+    <div class="row text-center">
     {% if realtors %}
     {% for realtor in realtors %}
-    <div class="row text-center">
+    
       <div class="col-md-4">
         <img src="{{ realtor.photo.url }}" alt="" class="rounded-circle mb-3">
         <h4>{{ realtor.name }}</h4>
+
         {% if realtor.is_mvp %}
         <p class="text-success">
           <i class="fas fa-award text-success mb-3"></i> Realtor</p>
         {% else %}
         <p class="text-success">Realtor</p>
         {% endif %}
-        <p class="text-success">
-          <i class="fas fa-award text-success mb-3"></i> Realtor</p>
         <hr>
         <p>
           <i class="fas fa-phone"></i> {{ realtor.phone }}</p>
         <p>
           <i class="fas fa-envelope-open"></i> {{ realtor.email }}</p>
       </div>
-    </div>
-  </div>
-</section>
+
 {% endfor %}
 {% else %}
-<div>
+<div class="col-md-12">
   <p>We have no teams Yet. Become part of our team!</p>
 </div>
 {% endif %}
+    </div>
+  </div>
+</section>
 {% endblock %}
