@@ -68,7 +68,7 @@ county_choices = {
     'KS': 'Kisumu',
     'HB': 'Homabay',
     'MI': 'Migori',
-    'KI': 'Kisii',
+    'KII': 'Kisii',
     'NM': 'Nyamira',
     'NA': 'Nairobi',
 }
